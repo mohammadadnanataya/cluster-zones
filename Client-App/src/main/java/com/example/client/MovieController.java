@@ -30,8 +30,8 @@ public class MovieController {
     private String key;
     
     @GetMapping("/{id}")
-    public String getMovie(@RequestParam("id") String id) {
-        String movie = consumeExternalAPI.getMovie(id, key);
+    public Movie getMovie(@RequestParam("id") String id) {
+        Movie movie = consumeExternalAPI.getMovie(id, key);
         return movie;
     }
     
@@ -41,6 +41,6 @@ public class MovieController {
 interface ConsumeExternalAPI {
     
     @RequestMapping(method = RequestMethod.GET, value = "/{id}?api_key={key}")
-    String getMovie(@PathVariable("id") String id, @PathVariable("key") String key);
+    Movie getMovie(@PathVariable("id") String id, @PathVariable("key") String key);
     
 }

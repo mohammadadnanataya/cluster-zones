@@ -11,16 +11,11 @@ package com.example.client;
  */
 public class Movie {
     private int id;
-    private String home_page;
+    private String homepage;
     private String original_title;
     private String overview;
     
-    public Movie(int id, String home_page, String original_title, String overview) {
-        this.id = id;
-        this.home_page = home_page;
-        this.original_title = original_title;
-        this.overview = overview;
-    }
+    
 
     public int getId() {
         return id;
@@ -30,12 +25,12 @@ public class Movie {
         this.id = id;
     }
 
-    public String getHome_page() {
-        return home_page;
+    public String getHomePage() {
+        return homepage;
     }
 
-    public void setHome_page(String home_page) {
-        this.home_page = home_page;
+    public void setHomePage(String homepage) {
+        this.homepage = homepage;
     }
 
     public String getOriginal_title() {

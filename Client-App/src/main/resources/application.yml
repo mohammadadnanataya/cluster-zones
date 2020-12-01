@@ -1,6 +1,8 @@
 spring:  
   application:
     name: client-app
+api:
+  key: 66a9de93b4d958b2a723f8c7a11db81d
 
 ---
 spring:
